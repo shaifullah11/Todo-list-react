@@ -1,42 +1,191 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
   text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 25%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.App-Header {
+  background-color: darkblue;
+  width: 100%;
+  color: #eaeaea;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: cursive;
+  
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.App-Header,.App-Content,.App-Footer{
+  border-left:2px solid darkblue ;
+  border-right:2px solid darkblue ;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.App-Content {
+  
+  width: 100%;
+  color: #eaeaea;
+  font-size: 30px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+.App-Content>button {
+  color: #eaeaea;
+  background-color: red;
+  border: 0;
+  height: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
 }
 
-.read-the-docs {
-  color: #888;
+.App-Footer {
+  background-color: darkblue;
+  width: 100%;
+  color: #eaeaea;
+  font-size: 30px;
+}
+
+.lets {
+  color: red !important;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.Content-item {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  justify-content: center;
+}
+
+.Content-item ul li {
+  background-color: #eeeeee;
+  margin-top: 10px;
+  font-size: 20px;
+  list-style: none;
+  padding: 12px 9px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.Content-item ul input {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.Content-item ul {
+
+  width: auto;
+  padding: 10px 0;
+}
+
+.Content-item svg {
+  color: blue;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.Content-item svg:hover {
+  color: red;
+}
+.Content-item label {
+  padding: 0 20px;
+}
+.addForm {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.addForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.addForm input[type='text'] {
+  flex-grow: 1;
+  max-width: calc(100% - 50px);
+  min-height: 48px;
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  outline: none;
+  border: 1.5px solid #8b8b8b;
+  border-radius:25px ;
+  padding-left: 15px;
+}
+
+button {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: aliceblue;
+  color: mediumblue;
+  cursor: pointer;
+  border: 1.5px solid #8b8b8b;
+}
+
+button:focus, 
+button:hover {
+  color: white;
+  background-color: limegreen;
+  outline: none;
+}
+
+.searchForm {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.25rem 0 0;
+  padding: 0 0.5rem 0.25rem;
+}
+
+.searchForm label {
+  position: absolute;
+  left: -99999px;
+}
+
+.searchForm input[type='text'] {
+  flex-grow: 1;
+  max-width: 100%;
+  min-height: 48px;
+  font-size: 1rem;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  outline: none; 
+  border: 1.5px solid #8b8b8b;
+  padding-left: 15px;
+  border-radius:25px ;
+}
+
+@media screen and (max-width:576px) {
+  .App {
+    padding: 0 5%;
+  }   
 }
