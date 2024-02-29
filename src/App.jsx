@@ -7,9 +7,9 @@ import { SearchItem } from './SearchItem';
 import {AddList} from './AddItem'
 function App() {
   const [items, setItems] = useState(
-    JSON.parse(localStorage.getItem('todo_list')) === null? 0:JSON.parse(localStorage.getItem('todo_list'))
+    JSON.parse(localStorage.getItem('todo_list')) === null? []:JSON.parse(localStorage.getItem('todo_list'))
   );
-  console.log(JSON.parse(localStorage.getItem('todo_list')));
+  console.log(items);
   const [newItem, setNewItem] = useState('')
   const [search, setSearch] = useState('')
   const AddItem = (item) => {
