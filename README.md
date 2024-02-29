@@ -49,6 +49,4 @@ A simple todo list application built using React and Vite.
 
 ## Demo
 
-A live demo of the application can be found [[https://shaifullah11.github.io/Todo-list-react/](https://shaifullah11.github.io/Todo-list-react/)] (replace with your live demo link if available).
-
-
+A live demo of the application can be found [[https://shaifullah11.github.io/Todo-list-react/](https://shaifullah11.github.io/Todo-list-react/)]
